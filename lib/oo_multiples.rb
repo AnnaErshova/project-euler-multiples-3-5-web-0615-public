@@ -3,7 +3,7 @@ class Multiples
   def initialize(limit)
     @limit = limit
     @sum = Array.new
-    @i = 1
+    @i = 3
   end
 
   def collect_multiples

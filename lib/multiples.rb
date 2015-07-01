@@ -1,28 +1,6 @@
-
-=begin
-sum = 0
-i = 1
-while i < 1000
-  if i%3 == 0 || i%5 == 0
-    sum += i
-  end
-  i += 1
-end
-
-sum = []
-i = 1
-while i < 1000
-  if i%3 == 0 || i%5 == 0
-    sum << i
-  end
-  i += 1
-end
-sum.inject {|total, x| total + x }
-=end 
-
 def collect_multiples(limit)
-  sum = []
-  i = 1
+  sum = Array.new
+  i = 3 # we know we need to start at 3
   while i < limit
     sum << i if i%3 == 0 || i%5 == 0
     i += 1
