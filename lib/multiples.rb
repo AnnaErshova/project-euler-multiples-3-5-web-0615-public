@@ -1,8 +1,7 @@
 
 =begin
 sum = 0
-i = 0
-
+i = 1
 while i < 1000
   if i%3 == 0 || i%5 == 0
     sum += i
@@ -11,8 +10,7 @@ while i < 1000
 end
 
 sum = []
-i = 0
-
+i = 1
 while i < 1000
   if i%3 == 0 || i%5 == 0
     sum << i
@@ -26,9 +24,7 @@ def collect_multiples(limit)
   sum = []
   i = 1
   while i < limit
-    if i%3 == 0 || i%5 == 0
-      sum << i
-     end
+    sum << i if i%3 == 0 || i%5 == 0
     i += 1
   end
   sum
